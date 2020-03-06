@@ -273,7 +273,8 @@ def home(request):
 
     fig.update_layout(
         yaxis={'title': 'Unit Intensity (W/m^2)'},
-        xaxis=dict(
+        xaxis={'title': 'Angle Range (Degrees)'},
+        xaxis1=dict(
             rangeselector=dict(
 
             ),
@@ -281,6 +282,7 @@ def home(request):
                 visible=True
             )
         ),
+
         updatemenus=[
             dict(
                 active=0,
@@ -316,9 +318,32 @@ def home(request):
                 ]),
             )
         ],
+        autosize=True,
+        height=650,
+        font=dict(
+            family="serif",
+            size=18,
+            # color="#7f7f7f"
+        )
     )
 
     # Set title
     fig.update_layout(title_text="Select any plot from drop down menu")
     plot_div = plot(fig, auto_open=True, output_type='div')
     return render(request, 'home.html', context={'plot_div': plot_div})
+
+
+def page2_21(request):
+    return render(request, '2_21.html')
+
+
+def page3_3(request):
+    return render(request, '3_3.html')
+
+
+def page3_4(request):
+    return render(request, '3_4.html')
+
+
+def page3_7(request):
+    return render(request, '3_7.html')
