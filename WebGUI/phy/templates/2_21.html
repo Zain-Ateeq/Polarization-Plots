@@ -1,0 +1,102 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Experiment 2.21</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+
+</head>
+
+<body>
+
+<div>
+
+    <h1><center>Mach-Zehnder Interferometry and Erasure of 'Which-path' Information</center></h1>
+    <p1>(Experiment Code: 2.21)</p1>
+
+    <div class="a">
+        <h2>Description</h2>
+        <p>One of the most astounding and bewildering depictions of quantum mechanics is the single- particle
+            interference experiment. If a source that emits only one particle (such as photons or electrons) at a
+            time, is used in a classic double slit experiment, an interference patterns will emerge. This pattern
+            is built up over multiple passes of identical particles. Interestingly, the pattern could be switched
+            on and off even after light has emerged from the interferometer.</p>
+
+
+        <h2>The Mach-Zehnder Interferometer </h2>
+        <p>The Mach-Zehnder interferometer is an amplitude splitting interferometer which divides the incoming beam
+            into two paths. The path differences result in an interference pattern. This contrasts with a waveform
+            splitting device such as the classic Young’s double slit interferometer. We are going to use a Mach-Zehnder
+            interferometer to verify the basic principles of polarization, obtainment and eventually the erasure of
+            ‘which-path’ information. This so called ‘erasure’ experiment underpins deep questions about quantum
+            mechanics as we will highlight later. The first step of course is setting up and aligning the basic
+            interferometer (see next section). The interferometer’s layout is shown in Figure 1.</p>
+        <figure>
+            <img src="{% static 'mach_zehnder1.png' %}" alt="mach_zehnder1" width="533" height="344" class="center">
+            <figcaption ><center>Figure 1: Schematic of the Mach-Zehnder interferometer. Herein P1 is a polarizer,
+                M1, M2, M3, M4 are highly reflecting mirrors, B1, B2 are non-polarizing beamsplitters and L is a
+                convex lens of focal length 25.4 mm. The red line shows the conceived path of the laser
+                beam.</center></figcaption>
+        </figure>
+
+
+        <h2>Interference and Erasure of Which Path Information</h2>
+        <p>If we set up the Mach-Zehnder interferometer above with a single photon source whose emission rate is
+            so low that there exists only one photon in the whole setup at one point in time, we still observe
+            an interference pattern that builds up over time. This pattern is due to the wave nature of quantum
+            particles. Now if we try to measure which path the photon has actually taken, the interference pattern
+            disappears. This is because in quantum mechanics, measuring a system leads to irreversible changes to
+            the system.</p>
+
+
+        <h2>Obtaining ‘which-path’ information and collapse of fringes</h2>
+        <p>In this part of the experiment, we place P2 and P3 in the paths I and II respectively. The mutual angle
+            between the polarizers P2 and P3 is adjustable. The schematic diagram with two more polarizers is shown
+            in Figure 2.</p>
+        <figure>
+            <img src="{% static 'mach_zehnder2.png' %}" alt="mach_zehnder2" width="533" height="343" class="center">
+            <figcaption><center>Figure 2: Schematic of the setup that labels the photons. Note that for picking a
+                fixed point, we use an iris (I) in front of the photo-detector.</center></figcaption>
+        </figure>
+        <p>If the polarizers P2 and P3 are crossed, ‘which-path’ information is obtained, and the interference
+            pattern collapses while if P2 and P3 are parallel, ‘which-path’ information is absent and interference
+            fringes are observable. These scenarios are depicted in Figure 3.</p>
+        <figure>
+            <img src="{% static 'interference.png' %}" alt="interference" width="533" height="200" class="center">
+            <figcaption><center>Figure 3: Pattern observed on the screen for (a) parallel polarizers, P2 and P3 (b)
+                crossed polarizers.</center></figcaption>
+        </figure>
+
+
+        <h2>Unit Intensity Plot</h2>
+        <p>When the polarizer is rotated at some angles the intensity of light on detector is changed. By ploting the
+            unit intensity against polarizer angle gives us the Unit intensity plot. Unit intensity plot for this
+            experiment is shown in Figure 4.</p>
+        <figure>
+            <img src="{% static 'P3_plot.png' %}" alt="P3_plot" width="533" height="390" class="center">
+            <figcaption><center>Figure 4: Unit intensity plot when P1 is 45&deg;, P2 is fixed and P3 is being
+                rotated.</center></figcaption>
+        </figure>
+        <p>This plot is obtained when we set P1 at the angle of 45&deg;, and then we rotate P3 relative to P2. The plot
+            above is coded in python using "matplotlib" package. Python code for this plot is given in Figure 5.</p>
+        <figure>
+            <img src="{% static 'P3_code.png' %}" alt="P3_code" width="533" height="230" class="center">
+            <figcaption><center>Figure 5: Python script for unit intensity plot.</center></figcaption>
+        </figure>
+
+
+        <h2>Conclusion</h2>
+        <p>A single photon can show interference pattern. The question arises that which path it takes to get to the
+            detector. When we try to observe its path by adding polarizer 2 and 3, the wave function collapses and we
+            see no interference pattern as if photon has lost its wave nature and become a particle.</p>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>

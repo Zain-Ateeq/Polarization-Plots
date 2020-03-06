@@ -1,0 +1,64 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en" xmlns="">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Experiment 3.4</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+
+</head>
+
+<body>
+
+<div>
+
+    <h1><center>Analyzing the Polarization State of Light through the Fourier Series</center></h1>
+    <p1>(Experiment Code: 3.4)</p1>
+
+    <div class="a">
+        <h2>Description</h2>
+        <p>One can completely determine the polarization of light simply by using a polarizer and a quarter wave
+            plate (QWP). In this experiment  we developed a method to generate as well as analyze different
+            polarization states of light.</p>
+
+
+        <h2>Experimental setup</h2>
+        <p>A HeNe laser beam is incident on a polarizer. The polarized light then passes through two QWPs, a
+            neutral density filter and an analyzer. Finally it is received by a photodiode. By orienting the polarizer
+            such that it produces a horizontal polarization. All angles can be measured with respect to this polarizer.
+            The schematic diagram of this apparatus is shown in Figure 1.</p>
+        <figure>
+            <img src="{% static '3.4_qwp_setup.png' %}" alt="3.4_qwp_setup" width="533" height="300" class="center">
+            <figcaption ><center>Figure 1: The polarizer and analyzer are oriented along the same direction. The
+                retarders QWP 1 and QWP 2 are at α and β with respect to the first polarizer respectively. The red
+                line shows the perceived path of laser</center></figcaption>
+        </figure>
+
+        <h2>Unit Intensity Plot</h2>
+        <p>Now we generated polarization by rotating the first QWP to some angle α between 0◦ to 45◦ and then changing
+            the angle β of the second QWP from 0◦ to 360◦ in some steps and recording the photodiode output for each
+            step will give us unit intensity plot. The unit theoretically formed unit intensity plot for this experiment
+            is shown in Figure 2</p>
+        <figure>
+            <img src="{% static '3.4_qwp.png' %}" alt="3.4_qwp" width="533" height="420" class="center">
+            <figcaption ><center>Figure 2: Unit intensity plots for QWP.</center></figcaption>
+        </figure>
+        <p>The plot above is coded in python using "matplotlib" package. Python code for this plot is given in Figure 3.</p>
+        <figure>
+            <img src="{% static '3.4_qwp_code.png' %}" alt="3.4_qwp_code" width="533" height="350" class="center">
+            <figcaption><center>Figure 3: Python script for unit intensity plot.</center></figcaption>
+        </figure>
+
+        <h2>Conclusion</h2>
+        <p>This is a good approach to find polarization state of light. By rotating one of the two quarter wave plates
+            we can easily find polarization</p>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Experiment 3.3</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+
+</head>
+
+<body>
+
+<div>
+
+    <h1><center>Investigating Polarization of Light through Jones Calculus</center></h1>
+    <p1>(Experiment Code: 3.3)</p1>
+
+    <div class="a">
+        <h2>Description</h2>
+        <p>Polarization is a fundamental property of light. The purpose of this experiment is to get familiarized with
+            the polarization of light as well as effects of different optical components on it. Polarization is best
+            described through a matrix treatment called Jones calculus.</p>
+
+
+        <h2>Experimental setup</h2>
+        <p>A HeNe laser beam is incident on a neutral density filter (NDF) and then polarizer. The polarized light
+            further passes through a HWP and a PBS which divides the incident beam into two components. Each of the
+            two beams emerging from the PBS passes through an iris and falls at photodiode A or B, as shown in Figure 1.
+            Each photodiode outputs a current proportional to the intensity of the detected light beam.</p>
+        <figure>
+            <img src="{% static '3.3_setup.png' %}" alt="3.3_setup" width="533" height="344" class="center">
+            <figcaption ><center>Figure 1:  Setup for the experiment. The red line shows the perceived light
+                path.</center></figcaption>
+        </figure>
+
+
+        <h2>Rotating HWP keeping polarizer at a fixed angle</h2>
+        <p>For this we orient the polarizer such that it produces a horizontal polarization. All angles are then
+            measured with respect to this polarizer. Then a complete set of linear polarizations with angles 0◦ to 360◦
+            is generated with any step choice by rotating the HWP. The photodiode outputs at position A and B are shown
+            as Unit intensity plots.</p>
+        <figure>
+            <img src="{% static '3.3_hwp.png' %}" alt="3.3_hwp.png" width="533" height="344" class="center">
+            <figcaption ><center>Figure 2: Unit intensity plots for HWP. V and H represents Vertical and Horizontal
+                respectively.</center></figcaption>
+        </figure>
+        <p>The PBS used splits the horizontal and vertical components of light. That is the reason why detector A
+            receives horizontally polarized light and b receives vertically polarized light. The above plot is plotted
+            in python using "matplotlib" package. Python script for this plot is shown in Figure 3.</p>
+        <figure>
+            <img src="{% static '3.3_hwp_code.png' %}" alt="3.3_hwp_code" width="533" height="390" class="center">
+            <figcaption ><center>Figure 3: Python script for unit intensity plot of half wave
+                plate.</center></figcaption>
+        </figure>
+
+        <h2>Rotating polarizer keeping HWP at a fixed angle</h2>
+        <p>Now, keeping HWP fixed at an arbitrary angle, we vary the angle of the polarizer from 0◦ to 360◦.
+            The detectors intensity shows some relation which can be plotted and can be verified by producing
+            relation using jones calculus. The plots between angle of polarizer and intensity are shown as unit
+            intensity plots in Figure 4</p>
+        <figure>
+            <img src="{% static '3.3_pa.png' %}" alt="3.3_pa.png" width="533" height="344" class="center">
+            <figcaption ><center>Figure 4: Unit intensity plots for Polarizer. V and H represents Vertical and
+                Horizontal respectively.</center></figcaption>
+        </figure>
+        <p>We can see clear difference between plots of HWP and polarizer angle unit intensity. The above plot is plotted in python using "matplotlib" package. Python script for this plot is shown in
+            Figure 5.</p>
+        <figure>
+            <img src="{% static '3.3_pa_code.png' %}" alt="3.3_pa_code" width="533" height="420" class="center">
+            <figcaption ><center>Figure 3: Python script for unit intensity plot of half wave
+                plate.</center></figcaption>
+        </figure>
+
+
+        <h2>Conclusion</h2>
+        <p>We see that different components effect the output intensity differently. And after comparing experimental
+        and theoretical results this is verified polarization is best described using jones calculas.</p>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>
