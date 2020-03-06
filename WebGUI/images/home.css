@@ -1,0 +1,23 @@
+
+body{
+    background-color: #FFFFFF;
+    padding-top:10px;
+    margin-bottom:50px;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+body*{
+    font-family: serif;
+}
+
+h1 {
+    font-weight: normal;
+    font-size: 40px;
+}
+
+a, a:hover, a:visited{
+    color: #fff;
+    text-decorator: none;
+}

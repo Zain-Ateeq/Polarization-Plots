@@ -1,0 +1,51 @@
+body{
+    background-color: #008080;
+    padding-top:10px;
+    margin-bottom:50px;
+    padding-top:100px;
+
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, repeat;
+
+    background-size:
+        300px 200px,
+        300px 200px,
+        300px 200px,
+        300px 200px,
+        1700px 900px
+        ;
+
+    background-image:
+        url(Laser_Interference.jfif),
+        url(interference.jpg),
+        url(spectrum.jpg),
+        url(diffraction.jpg),
+        url(fibre_optics.jpg)
+        ;
+
+    background-position:
+        60% 90%,
+        60% 10%,
+        30% 10%,
+        30% 90%,
+        0% 0%
+        ;
+}
+
+body*{
+    font-family: Ubuntu;
+}
+
+p, h1, h2, h3, h4, h5 {
+ color: #FFFFFF;
+}
+
+h1, h2 ,h3 ,h4 , h5{
+    font-weight: normal;
+    margin: 0;
+    font-size: 40px;
+}
+
+a, a:hover, a:visited{
+    color: #fff;
+    text-decorator: none;
+}
