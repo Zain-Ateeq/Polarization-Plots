@@ -1,4 +1,4 @@
-# Polarization Plot Generator
+# Web App for Polarization Plots
 
 ## Overview
 This project provides an interactive website where users can generate polarization plots within given schematics. The platform allows users to explore and visualize different polarization states by modifying the configurations of the experimental setup.
